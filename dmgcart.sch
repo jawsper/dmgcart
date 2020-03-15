@@ -5,8 +5,8 @@ $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 1 1
 Title "DMGcart"
-Date "2020-03-06"
-Rev ""
+Date "2020-03-16"
+Rev "v1.1"
 Comp "Jasper Seidel"
 Comment1 ""
 Comment2 ""
@@ -770,7 +770,6 @@ NoConn ~ 1600 3750
 NoConn ~ 1600 3450
 NoConn ~ 1600 3350
 NoConn ~ 4000 4950
-NoConn ~ 4000 5350
 NoConn ~ 4000 5450
 NoConn ~ 4000 5550
 NoConn ~ 4000 6150
@@ -1352,13 +1351,6 @@ F 3 "" H 3950 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 8350 3950 8450
-Wire Wire Line
-	3950 8300 3950 8350
-Connection ~ 3950 8350
-Wire Wire Line
-	3650 8350 3950 8350
-Wire Wire Line
 	4150 8300 4150 8450
 $Comp
 L power:+5V #PWR0114
@@ -1402,8 +1394,6 @@ F 3 "" H 4050 9650 50  0001 C CNN
 	1    4050 9650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 8350 3650 8650
 Text Label 4450 9150 0    50   ~ 0
 GB_D3
 Text Label 4450 9250 0    50   ~ 0
@@ -2213,4 +2203,10 @@ Wire Wire Line
 Wire Wire Line
 	5150 6100 5050 6100
 Connection ~ 5150 6600
+Wire Wire Line
+	3950 8300 3950 8450
+Text Label 3650 8650 2    50   ~ 0
+LVL_SHIFT_OE
+Text Label 4000 5350 0    50   ~ 0
+LVL_SHIFT_OE
 $EndSCHEMATC
